@@ -37,7 +37,7 @@ $primary-color: #50c9de !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: color("blue", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
@@ -138,9 +138,6 @@ $dropdown-item-height: 50px !default;
 // 9. Fonts
 // ==========================================================================
 
-$roboto-font-path: "../fonts/roboto/" !default;
-
-
 // 10. Forms
 // ==========================================================================
 
@@ -221,13 +218,13 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 // 13. Navigation Bar
 // ==========================================================================
 
-$navbar-height: 64px !default;
+$navbar-height: 50px !default;
 $navbar-line-height: $navbar-height !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height-mobile: 50px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1rem !default;
-$navbar-font-color: #fff !default;
-$navbar-brand-font-size: 2.1rem !default;
+$navbar-font-color: rgba(255, 255, 255, 0) !default;
+$navbar-brand-font-size: 3rem !default;
 
 // 14. Side Navigation
 // ==========================================================================
@@ -285,8 +282,8 @@ $off-black: rgba(0, 0, 0, 0.87) !default;
 $h1-fontsize: 4.2rem !default;
 $h2-fontsize: 3.56rem !default;
 $h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
+$h4-fontsize: 2rem !default;
+$h5-fontsize: 1.98rem !default;
 $h6-fontsize: 1rem !default;
 
 

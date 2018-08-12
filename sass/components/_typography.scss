@@ -18,13 +18,17 @@ html{
     font-size: 15px;
   }
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   color: $off-black;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display', serif !important;
 }
 
 // Header Styles

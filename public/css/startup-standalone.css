@@ -2657,8 +2657,8 @@ td, th {
 }
 
 .collection .collection-item.active {
-  background-color: #26a69a;
-  color: #eafaf9;
+  background-color: #42A5F5;
+  color: white;
 }
 
 .collection .collection-item.active .secondary-content {
@@ -2668,7 +2668,7 @@ td, th {
 .collection a.collection-item {
   display: block;
   transition: .25s;
-  color: #26a69a;
+  color: #42A5F5;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -2691,7 +2691,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #26a69a;
+  color: #42A5F5;
 }
 
 .collapsible .collection {
@@ -2719,7 +2719,7 @@ td, th {
   height: 4px;
   display: block;
   width: 100%;
-  background-color: #acece6;
+  background-color: white;
   border-radius: 2px;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
@@ -2730,12 +2730,12 @@ td, th {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #26a69a;
+  background-color: #42A5F5;
   transition: width .3s linear;
 }
 
 .progress .indeterminate {
-  background-color: #26a69a;
+  background-color: #42A5F5;
 }
 
 .progress .indeterminate:before {
@@ -4964,7 +4964,7 @@ td, th {
 
 .horizontal-half-transition[data-disabled="true"] .phone-preview-sizer {
   position: relative;
-  top: 56px;
+  top: 50px;
   left: 0;
   transform: none;
 }
@@ -5304,7 +5304,7 @@ h1 {
 }
 
 h5 {
-  font-size: .9rem;
+  font-size: 2.1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -5338,7 +5338,7 @@ nav.navbar ul.dropdown-content li > span::before,
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   transform: scaleX(0);
   transition: transform .2s, background-color .2s;
 }
@@ -5347,7 +5347,7 @@ nav.navbar ul.dropdown-content li > a::before,
 nav.navbar ul.dropdown-content li > span::before,
 .dropdown-content li > a::before,
 .dropdown-content li > span::before, .side-nav li > a::before {
-  background-color: #26a69a;
+  background-color: #42A5F5;
   left: -10px;
   width: 2px;
   height: 100%;
@@ -5374,7 +5374,7 @@ nav.navbar ul.dropdown-content li > a:hover,
 nav.navbar ul.dropdown-content li > span:hover,
 .dropdown-content li > a:hover,
 .dropdown-content li > span:hover {
-  color: #26a69a;
+  color: #42A5F5;
 }
 
 nav.navbar ul.dropdown-content li > a:hover::before,
@@ -5919,7 +5919,7 @@ textarea.materialize-textarea + label {
 /**** FOOTER ****/
 .page-footer {
   color: #444;
-  padding: 40px 0;
+  padding: 20px 0;
   margin: 0;
 }
 

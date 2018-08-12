@@ -1,4 +1,43 @@
 .shadow-headline {
-    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+.shadow-minor {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-solid-transition.solid h4.shadow-nav {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6) !important;
+    position: relative;
+    top: -6px;
+    font-size: 1.9rem !important;
+    font-weight: bold !important;
+}
+
+.white-text-override {
+    color: rgba(255, 255, 255, 1);
+}
+
+ul#nav-mobile * {
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: bold;
+}
+
+.navbar-solid-transition.solid * {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.icon-link {
+    position: relative;
+    top: 5px;
+    height: 24px;
+    width: 24px;
+}
+
+svg {
+    fill: currentColor;
+}
+
+.team .avatar-wapper {
+    margin: auto !important;
 }
