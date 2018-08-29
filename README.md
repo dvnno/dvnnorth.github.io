@@ -1,2 +1,2 @@
 # dvnnorth.github.io
-Hosts all of my front-end applications on Github
+Repository for my portfolio website. Also hosts the README.
