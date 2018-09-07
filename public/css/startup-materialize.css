@@ -11510,8 +11510,8 @@ nav.navbar ul.dropdown-content li > span:hover::before,
 nav.navbar {
   z-index: 10;
   position: fixed;
-  box-shadow: none;
   background-color: transparent;
+  box-shadow: none;
   transition: box-shadow .3s, background-color .3s;
 }
 
@@ -12139,4 +12139,58 @@ textarea.materialize-textarea + label {
   .header .header-wrapper h1 {
     font-size: 4rem;
   }
+}
+
+.shadow-headline {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+.shadow-minor {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-solid-transition.solid h4.shadow-nav {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6) !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  position: absolute;
+  top: 2.7rem;
+  left: 5px;
+  letter-spacing: 1px;
+}
+
+.navbar-solid-transition.solid {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.white-text-override {
+  color: white;
+}
+
+ul#nav-mobile * {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-solid-transition.solid * {
+  color: white !important;
+}
+
+.icon-link {
+  position: relative;
+  top: 5px;
+  height: 24px;
+  width: 24px;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.team .avatar-wapper {
+  margin: auto !important;
 }

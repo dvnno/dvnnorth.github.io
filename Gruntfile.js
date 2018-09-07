@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 
 //  Sass
     sass: {                              // Task
-      expanded: {                            // Target
+      expanded: {                        // Target
         options: {                       // Target options
           outputStyle: 'expanded',
           sourcemap: false,

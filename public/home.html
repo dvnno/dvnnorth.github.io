@@ -10,7 +10,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:900" rel="stylesheet">
   <link rel="stylesheet" href="css/startup-materialize.min.css">
-  <link rel="stylesheet" href="css/style.css">
 
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,7 +22,9 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo headLink">
         <i class="material-icons">code</i>
-        <h4 class="playfair-display shadow-nav">DEVIN NORTH</h4>
+        <span class="pos-rel">
+          <h4 class="playfair-display shadow-nav nav-name">DEVIN NORTH</h4>
+        </span>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
@@ -58,6 +59,7 @@
       </a>
     </div>
   </nav>
+
   <ul id="slide-out" class="side-nav">
     <li>
       <a class="waves-effect waves-light aboutMeLink" href="#">About Me</a>
@@ -108,19 +110,26 @@
   <div class="section black valign-wrapper" id="about-me">
     <div class="row valign">
       <div class="col s12 m10 offset-m1">
-          <div class="col s12">
-            <h2 class="section-title">About Me</h2>
-          </div>
+        <div class="col s12">
+          <h2 class="section-title">About Me</h2>
+        </div>
         <div class="row staggered-transition-wrapper" data-duration="0" data-staggereddelay=".9">
           <div class="col s12 fade-in-out">
             <div class="team left">
-                <div class="avatar-wrapper">
-                  <span class="avatar">
-                    <img src="img/avatar_new.jpg" alt="">
-                  </span>
-                </div>
+              <div class="avatar-wrapper">
+                <span class="avatar">
+                  <img src="img/avatar_new.jpg" alt="">
+                </span>
               </div>
-              <p class="caption">I am a Houston-based aspiring web developer and technophile with a passion for people, technology, and combining their power to develop meaningful solutions. I have front and back end development experience and can quickly pick up new libraries, frameworks, languages, and technologies. I have strong interpersonal communication skills developed through regular interaction with clients, local and overseas colleagues, and numerous third-parties across several industries. I have been in positions where I have had to interpret and understand important KPIs and business metrics, develop action plans, and execute to achieve relevant goals and understand what it means to work as a team to reach a common goal. Above all, I have a deep passion for learning new technologies and diving deep into projects to solve problems and deliver results.</p>
+            </div>
+            <p class="caption">I am a Houston-based aspiring web developer and technophile with a passion for people, technology,
+              and combining their power to develop meaningful solutions. I have front and back end development experience
+              and can quickly pick up new libraries, frameworks, languages, and technologies. I have strong interpersonal
+              communication skills developed through regular interaction with clients, local and overseas colleagues, and
+              numerous third-parties across several industries. I have been in positions where I have had to interpret and
+              understand important KPIs and business metrics, develop action plans, and execute to achieve relevant goals
+              and understand what it means to work as a team to reach a common goal. Above all, I have a deep passion for
+              learning new technologies and diving deep into projects to solve problems and deliver results.</p>
           </div>
         </div>
       </div>
@@ -135,7 +144,7 @@
           <div class="col s12 m6 l4">
             <div class="card fade-in-out up-in-out" data-duration="0">
               <div class="card-image">
-                <a href="blog.html">
+                <a href="#modal1">
                   <img src="http://placehold.it/600x400">
                 </a>
                 <span class="card-title">Something Interesting</span>
@@ -240,6 +249,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://placeimg.com/1000/1000/any">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
