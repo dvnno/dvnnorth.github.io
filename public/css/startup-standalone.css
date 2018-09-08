@@ -6033,6 +6033,10 @@ textarea.materialize-textarea + label {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.portfolio-image {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px), only screen and (max-device-width: 641px) and (orientation: landscape) {
   .section {
     height: auto;

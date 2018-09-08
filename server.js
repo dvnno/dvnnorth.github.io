@@ -10,10 +10,24 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-require(path.join(__dirname, "/controllers/routes"))(app);
+require(path.join(__dirname, "/controllers/htmlRoutes"))(app);
+require(path.join(__dirname, "/controllers/apiRoutes"))(app);
 
-db.sequelize.sync().then(function () {
-    app.listen(PORT, () => {
-        console.log("Application running successfully on port", PORT);
+if (process.env.JAWSDB_URL) {
+    syncDb(false);
+}
+else {
+    syncDb(true);
+}
+
+function syncDb(force) {
+    db.sequelize.sync({ force: force }).then(function () {
+        app.listen(PORT, () => {
+            if (force) console.log('Development Environment: ');
+            else console.log('Deployed: ');
+            console.log("Application running successfully on port", PORT);
+        });
     });
-});
+}
+
+

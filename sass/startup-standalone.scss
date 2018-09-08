@@ -716,6 +716,11 @@ textarea.materialize-textarea {
   }
 }
 
+// Custom
+.portfolio-image {
+  cursor: pointer;
+}
+
 
 // Mobile styles.
 @media #{$small-and-down},
