@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
+const exphbs = require("express-handlebars");
 const db = require("./models");
 
 const PORT = process.env.PORT || 8000;
@@ -9,6 +10,10 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Setup handlebars as rendering engine
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 require(path.join(__dirname, "/controllers/htmlRoutes"))(app);
 require(path.join(__dirname, "/controllers/apiRoutes"))(app);

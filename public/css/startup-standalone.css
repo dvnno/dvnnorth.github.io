@@ -6034,7 +6034,12 @@ textarea.materialize-textarea + label {
 }
 
 .portfolio-image {
-  cursor: pointer;
+  cursor: pointer !important;
+}
+
+.title-shadow {
+  background: rgba(0, 0, 0, 0.1) !important;
+  text-shadow: 4px 4px 2px #969696 !important;
 }
 
 @media only screen and (max-width: 600px), only screen and (max-device-width: 641px) and (orientation: landscape) {
