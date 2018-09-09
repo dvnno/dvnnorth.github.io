@@ -6037,6 +6037,11 @@ textarea.materialize-textarea + label {
   cursor: pointer !important;
 }
 
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
 @media only screen and (max-width: 600px), only screen and (max-device-width: 641px) and (orientation: landscape) {
   .section {
     height: auto;
