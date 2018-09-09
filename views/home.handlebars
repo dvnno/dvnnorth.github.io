@@ -117,8 +117,8 @@
 
 <div class="section light full-height" id="portfolio">
     <div class="row">
-        <div class="col s12 m10 offset-m1 center">
-            <h1>Portfolio</h1>
+        <div class="col s12 m10 offset-m1">
+            <h1 class="center">Portfolio</h1>
             <div id="portfolio-content" class="row masonry-grid">
                 {{#each projects}}
                 <div class="col s12 m6 l4">
@@ -131,6 +131,7 @@
                 </div>
                 {{/each}}
             </div>
+            <p class="caption white-text">This website is a full-stack, dynamic web application as well! The front-end is a Materialize template rendered with express-handlebars and styled using some prebuilt and custom Sass. The backend was developed using Node and Express and the project information is stored on a MySQL server that is queried using the Sequelize ORM. The repository for this website is available <a class="white-text" style="font-weight: bold" href="https://www.github.com/dvnnorth/dvnnorth.github.io" target="_blank">here.</a></p>
         </div>
     </div>
 </div>
@@ -173,7 +174,7 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <p class="center-align"></p>
+                <p class="center-align">&copy;2018 Devin North | Built with Materialize</p>
             </div>
         </div>
     </div>
@@ -187,8 +188,12 @@
         <p id="modal-project-description" class="black-text"></p>
     </div>
     <div class="modal-footer">
-        <a id="modal-deployed-link" href="#" class="modal-close waves-effect waves-green btn-flat hide" target="_blank">Deployed Link</a>
+        <a id="modal-deployed-link" href="#" class="modal-close waves-effect waves-green btn-flat hide" target="_blank">Deployed
+            Link
+        </a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a id="modal-repo-link" href="#" class="modal-close waves-effect waves-green btn-flat" target="_blank">Repository Link</a>
+        <a id="modal-repo-link" href="#" class="modal-close waves-effect waves-green btn-flat" target="_blank">Repository
+            Link
+        </a>
     </div>
 </div>

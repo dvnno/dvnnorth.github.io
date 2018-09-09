@@ -2061,7 +2061,7 @@
   color: #f5f5f5 !important;
 }
 
-.grey.lighten-3, .page-footer {
+.grey.lighten-3 {
   background-color: #eeeeee !important;
 }
 
@@ -5918,8 +5918,10 @@ textarea.materialize-textarea + label {
 
 /**** FOOTER ****/
 .page-footer {
-  color: #444;
-  padding: 20px 0;
+  /*@extend .grey.lighten-3;*/
+  background-color: #24a7be !important;
+  color: #fff;
+  padding: 6px 0;
   margin: 0;
 }
 
@@ -5941,7 +5943,7 @@ textarea.materialize-textarea + label {
 
 .page-footer ul li a,
 .page-footer p {
-  color: #aaa;
+  color: #fff;
   font-size: .8rem;
   font-weight: 300;
   margin: 5px 0;
