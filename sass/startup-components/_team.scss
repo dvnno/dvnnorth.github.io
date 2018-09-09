@@ -8,7 +8,7 @@
     height: 50px;
     width: 50px;
     @extend .circle;
-
+    
     img {
       width: 50px;
     }
@@ -64,6 +64,7 @@
     width: 80%;
     max-width: 150px;
     margin: 0 auto 30px;
+
 
     .avatar {
       width: 100%;

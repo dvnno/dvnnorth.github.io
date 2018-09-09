@@ -15,8 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-require(path.join(__dirname, "/controllers/htmlRoutes"))(app);
-require(path.join(__dirname, "/controllers/apiRoutes"))(app);
+require(path.join(__dirname, "/controllers/routes"))(app);
 
 if (process.env.JAWSDB_URL) {
     syncDb(false);

@@ -4354,8 +4354,8 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -4378,7 +4378,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.1;
 }
 
@@ -4612,11 +4612,24 @@ small {
 }
 
 .card .card-title {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+.card .card-title.activator {
+  cursor: pointer;
+}
+
+.card .modal-card-title {
   font-size: 24px;
   font-weight: 300;
 }
 
-.card .card-title.activator {
+.card .modal-card-title.activator {
   cursor: pointer;
 }
 
@@ -4722,7 +4735,7 @@ small {
   bottom: 0;
   left: 0;
   max-width: 100%;
-  padding: 24px;
+  padding: 10px;
 }
 
 .card .card-content {

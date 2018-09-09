@@ -15,10 +15,10 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(10000),
             allowNull: false,
             validate: {
-                len: [2,1000]
+                len: [2,10000]
             }
         },
         repo_url: {

@@ -3,9 +3,6 @@
     <div class="nav-wrapper">
         <a href="#" class="brand-logo headLink">
             <i class="material-icons">code</i>
-            <span class="pos-rel">
-                <h4 class="playfair-display shadow-nav nav-name">DEVIN NORTH</h4>
-            </span>
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
@@ -91,13 +88,13 @@
 <div class="section black valign-wrapper" id="about-me">
     <div class="row valign">
         <div class="col s12 m10 offset-m1">
-            <div class="col s12">
+            <div class="col s12 center">
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="row staggered-transition-wrapper" data-duration="0" data-staggereddelay=".9">
                 <div class="col s12 fade-in-out">
-                    <div class="team left">
-                        <div class="avatar-wrapper">
+                    <div class="team">
+                        <div class="avatar-wrapper center">
                             <span class="avatar">
                                 <img src="img/avatar_new.jpg" alt="">
                             </span>
@@ -124,14 +121,14 @@
             <h1>Portfolio</h1>
             <div id="portfolio-content" class="row masonry-grid">
                 {{#each projects}}
-                    <div class="col s12 m6 l4">
-                        <div class="card fade-in-out up-in-out" data-duration="0">
-                            <div class="card-image">
-                                <img class="portfolio-image" data-project="{{id}}" src="{{img}}" alt="{{title}}" width=600>
-                                <span class="card-title title-shadow">{{title}}</span>
-                            </div>
+                <div class="col s12 m6 l4">
+                    <div class="card fade-in-out up-in-out" data-duration="0">
+                        <div class="card-image">
+                            <img class="portfolio-image" data-project="{{id}}" src="{{img}}" alt="{{title}}" width=600>
+                            <span class="card-title">{{title}}</span>
                         </div>
                     </div>
+                </div>
                 {{/each}}
             </div>
         </div>
@@ -143,7 +140,7 @@
     <div class="container">
         <form action="https://formspree.io/prtflo@boun.cr" method="POST">
             <div class="row">
-                <div class="col s12">
+                <div class="col s12 center">
                     <h2 class="section-title">Contact Me</h2>
                 </div>
                 <div class="input-field col s6">
@@ -160,7 +157,7 @@
                 </div>
                 <div class="input-field col s6">
                     <input id="phone_number" type="text" name="phone" maxlength="12">
-                    <label for="phone_number">Phone Number (555-555-5555)</label>
+                    <label for="phone_number">Phone Number</label>
                 </div>
                 <div class="input-field col s12">
                     <textarea id="message" name="message" class="materialize-textarea" maxlength="500"></textarea>
@@ -183,25 +180,15 @@
 </footer>
 
 <!-- Portfolio Modal -->
-<div id="portfolioModal" class="modal modal-fixed-footer">
+<div id="portfolio-modal" class="modal modal-fixed-footer">
     <div class="modal-content">
-
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img id="modalImg" class="activator" src="https://placeimg.com/1000/1000/any">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-
+        <h4 class="black-text"><span id="modal-project-title"></span><i class="material-icons modal-close right">close</i></h4>
+        <img id="modal-img" src="" alt="" width="100%">
+        <p id="modal-project-description" class="black-text"></p>
     </div>
     <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a id="modal-deployed-link" href="#" class="modal-close waves-effect waves-green btn-flat hide" target="_blank">Deployed Link</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="modal-repo-link" href="#" class="modal-close waves-effect waves-green btn-flat" target="_blank">Repository Link</a>
     </div>
 </div>
