@@ -722,11 +722,6 @@ textarea.materialize-textarea {
   cursor: pointer !important;
 }
 
-html {
-  overflow: -moz-scrollbars-vertical; 
-  overflow-y: scroll;
-}
-
 // Mobile styles.
 @media #{$small-and-down},
 only screen and (max-device-width: 641px)

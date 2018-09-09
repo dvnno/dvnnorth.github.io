@@ -879,7 +879,8 @@
 
     $("#portfolio-modal").modal();
 
-    $(".portfolio-image").click(function (_) {
+    $(".portfolio-image").click(function (event) {
+      event.preventDefault();
       let url = "/api/project/" + $(this).data("project");
       console.log(url);
       $.get(url, function (project) {
