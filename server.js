@@ -17,8 +17,6 @@ app.set('view engine', 'handlebars');
 
 require(path.join(__dirname, "/controllers/routes"))(app);
 
-console.log(process.env.JAWSDB_URL);
-
 if (process.env.JAWSDB_URL) {
     syncDb(false);
 }
