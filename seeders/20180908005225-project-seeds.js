@@ -18,8 +18,8 @@ module.exports = {
           title: "UtiliFleet",
           img: "img/utilifleet.png",
           description: "UtiliFleet is an enterprise-class fleet management web application built using React, Node/Express, and MySQL/Sequelize.",
-          repo_url: "https://github.com/dvnnorth/pixel-forest",
-          deployed_url: "https://pixelforest.herokuapp.com/",
+          repo_url: "https://github.com/dvnnorth/utili-fleet",
+          deployed_url: "https://www.utilifleet.com/",
           createdAt: Sequelize.fn('NOW'),
           updatedAt: Sequelize.fn('NOW')
         },
@@ -27,8 +27,8 @@ module.exports = {
           title: "React News Scraper",
           img: "img/nytscraper.png",
           description: "React News Scraper is a full-stack MERN application that scrapes the New York Times front page for headlines and allows the user to collect and annotate them.",
-          repo_url: "https://github.com/dvnnorth/RoutePlanner",
-          deployed_url: "https://dvnnorth.github.io/RoutePlanner",
+          repo_url: "https://github.com/dvnnorth/nyt-react-scraper",
+          deployed_url: "https://nytreactscraper-dvnnorth.herokuapp.com/",
           createdAt: Sequelize.fn('NOW'),
           updatedAt: Sequelize.fn('NOW')
         },
@@ -46,7 +46,7 @@ module.exports = {
           img: "img/eatdaburger.jpg",
           description: "This application is a full-stack web application that uses Node.js, Handlebars.js, Express, and MySQL for the server-side logic and Bootstrap for the front-end design.",
           repo_url: "https://github.com/dvnnorth/burger-app",
-          deployed_url: "http://burgerapp-dvnnorth.herokuapp.com/",
+          deployed_url: "https://burgerapp-dvnnorth.herokuapp.com/",
           createdAt: Sequelize.fn('NOW'),
           updatedAt: Sequelize.fn('NOW')
         },
