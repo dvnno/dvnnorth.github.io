@@ -17,7 +17,7 @@ module.exports = {
         {
           title: "UtiliFleet",
           img: "img/utilifleet.png",
-          description: "UtiliFleet is a full-stack web application built using Node, Express, React, and MySQL with P.",
+          description: "UtiliFleet is an enterprise-class fleet management web application built using React, Node/Express, and MySQL/Sequelize.",
           repo_url: "https://github.com/dvnnorth/pixel-forest",
           deployed_url: "https://pixelforest.herokuapp.com/",
           createdAt: Sequelize.fn('NOW'),
